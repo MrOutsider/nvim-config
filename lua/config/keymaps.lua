@@ -30,9 +30,9 @@ keymap("n", "<C-l>", "<C-w>l", opts)
 keymap("n", "<Leader>e", ":Lex<CR> :vertical resize 30<CR>", opts)
 
 -- Window: Resize
-keymap("n", "<C-Up>",    ":resize -2<CR>", opts)
-keymap("n", "<C-Down>",  ":resize +2<CR>", opts)
-keymap("n", "<C-Left>",  ":vertical resize -2<CR>", opts)
+keymap("n", "<C-Up>", ":resize -2<CR>", opts)
+keymap("n", "<C-Down>", ":resize +2<CR>", opts)
+keymap("n", "<C-Left>", ":vertical resize -2<CR>", opts)
 keymap("n", "<C-Right>", ":vertical resize +2<CR>", opts)
 
 -- Buffer
@@ -46,4 +46,4 @@ keymap("i", "jk", "<Esc>", opts)
 -- Visual Mode --
 -- Delete Things
 keymap("v", "<Leader>d", '"_d', opts) -- Send delete to null register
-keymap("v", "x", '"_x', opts) -- Send single char delete to null register
+keymap("v", "x", '"_x', opts)         -- Send single char delete to null register
