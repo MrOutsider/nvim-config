@@ -8,8 +8,11 @@ return {
       "BurntSushi/ripgrep",
     },
     config = function()
+      vim.keymap.set("n", "<Leader>fe", require("telescope.builtin").buffers)
       vim.keymap.set("n", "<Leader>ff", require("telescope.builtin").find_files)
       vim.keymap.set("n", "<Leader>fg", require("telescope.builtin").live_grep)
+      vim.keymap.set("n", "<Leader>fv", require("telescope.builtin").grep_string)
+      vim.keymap.set("n", "<Leader>fb", require("telescope.builtin").current_buffer_fuzzy_find)
     end,
   },
 }
