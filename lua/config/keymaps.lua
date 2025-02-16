@@ -32,13 +32,16 @@ keymap("n", "<Leader>e", ":Lex<CR> :vertical resize 30<CR>", opts)
 -- Window: Resize
 keymap("n", "<C-Up>", ":resize -2<CR>", opts)
 keymap("n", "<C-Down>", ":resize +2<CR>", opts)
-keymap("n", "<C-Left>", ":vertical resize -2<CR>", opts)
-keymap("n", "<C-Right>", ":vertical resize +2<CR>", opts)
+keymap("n", "<C-Left>", ":vertical resize +2<CR>", opts)
+keymap("n", "<C-Right>", ":vertical resize -2<CR>", opts)
 
 -- Buffer
 -- Buffer: Movement
 keymap("n", "<S-h>", ":bnext<CR>", opts)
 keymap("n", "<S-l>", ":bprevious<CR>", opts)
+
+-- Format
+keymap("n", "<Leader>f", ":=vim.lsp.buf.format()<CR>", opts)
 
 -- Insert Mode --
 keymap("i", "jk", "<Esc>", opts)
