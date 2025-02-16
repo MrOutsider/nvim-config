@@ -27,7 +27,7 @@ keymap("n", "<C-k>", "<C-w>k", opts)
 keymap("n", "<C-l>", "<C-w>l", opts)
 
 -- Window Dir Explorer
-keymap("n", "<Leader>e", ":Lex<CR> :vertical resize 30<CR>", opts)
+--keymap("n", "<Leader>e", ":Lex<CR> :vertical resize 30<CR>", opts)
 
 -- Window: Resize
 keymap("n", "<C-Up>", ":resize -2<CR>", opts)
@@ -42,6 +42,9 @@ keymap("n", "<S-l>", ":bprevious<CR>", opts)
 
 -- Format
 keymap("n", "<Leader>f", ":=vim.lsp.buf.format()<CR>", opts)
+
+-- File Explorer
+keymap("n", "<Leader>e", ":Ex<CR>", opts)
 
 -- Insert Mode --
 keymap("i", "jk", "<Esc>", opts)
