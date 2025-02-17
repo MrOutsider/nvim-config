@@ -20,8 +20,8 @@ vim.g.maplocalleader = " "
 -- Normal Mode --
 -- Tab
 keymap("n", "<leader><tab><tab>", ":tabnew<CR>", opts)
--- Tab: Movement
 keymap("n", "<leader><tab>q", ":tabclose<CR>", opts)
+-- Tab: Movement
 keymap("n", "<leader><tab>h", ":tabprevious<CR>", opts)
 keymap("n", "<leader><tab>l", ":tabnext<CR>", opts)
 
@@ -59,3 +59,6 @@ keymap("i", "jk", "<esc>", opts)
 -- Delete Things
 keymap("v", "<leader>d", '"_d', opts) -- Send delete to null register
 keymap("v", "x", '"_x', opts)         -- Send single char delete to null register
+
+-- Terminal Mode --
+keymap("t", "<esc><esc>", "<C-\\><C-n>", opts)
