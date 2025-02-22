@@ -45,7 +45,7 @@ keymap("n", "<S-h>", ":bnext<CR>", opts)
 keymap("n", "<S-l>", ":bprevious<CR>", opts)
 
 -- Format
-keymap("n", "<leader>f", ":=vim.lsp.buf.format()<CR>", opts)
+keymap("n", "<leader>df", ":=vim.lsp.buf.format()<CR>", opts)
 
 -- File Explorer
 keymap("n", "<leader>e", ":Ex<CR>", opts)
