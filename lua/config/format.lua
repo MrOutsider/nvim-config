@@ -4,4 +4,4 @@ vim.o.softtabstop = 2 -- Number of spaces inserted instead of a TAB character
 vim.o.shiftwidth = 2 -- Number of spaces inserted when indenting
 
 vim.wo.number = true -- Line numbers on the left
-vim.wo.relativenumber = true -- Relative line numbers on the left
+--vim.wo.relativenumber = true -- Relative line numbers on the left
